@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNER - Universidad Nacional de Entre Ríos</title>
+  <link rel="stylesheet" href="css/interfaz.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="img/icouner.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/icouner.ico" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Barra Navegación -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img href="index.html" class="logochico" src="img/header.png" alt="UNER">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carreras.html" style="color:#FFFF">CARRERAS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color:#FFFF" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              INSCRIPCIONES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+              <li><a class="dropdown-item" href="bedelia.html">SIGE-BEDELIA</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="institucional.html" style="color:#FFFF">INSTITUCIONAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- bedelia -->
+
+  
+  <!--  MENU LATERAL -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3 p-0">
+        <div class="list-group">
+          <a href="bedelia.html" class="list-group-item list-group-item-action active" aria-current="true">
+            Estudiantes
+          </a>
+          <a href="agregarMat.html" class="list-group-item list-group-item-action">Materias</a>
+          <a href="agregarCarreras.html" class="list-group-item list-group-item-action">Carreras</a>
+        </div>
+      </div>
+      <div class="col-lg-9 d-flex align-items-center justify-content-center" style="background-color: #4A6BA8;">
+        <img src="img/sige23.png" alt="SIGE" class="img-fluid">
+      </div>
+      
+    </div>
+  </div>
+  
+  <!-- TABLA -->
+  <section>
+    <div class="container mt-4 shadow-lg p-3 mb-3 rounded " id="bedeliabody">
+      <h3>Estudiantes</h3>    
+      <button id="btnCrear"type="button" data-bs-toggle="modal" class="btn btn-primary " data-bs-target="#addModal">Agregar</button>
+      <div class="container">
+        <label class="form-label" for="buscarEstudiante">Buscar estudiante</label>
+        <input class="form-control" type="text" name="buscarEstudiante" id="buscarEstudiante">
+        <button class="btn btn-info " type="button" id="botonBuscarEstudiante">Buscar</button>
+      </div>
+      <div class="container">
+        <button type="button" class="btn btn-dark" id="listarEstudiantes">Listar estudiantes</button>
+      </div>
+      <table id="dataTabla"class="table mt-2 table-bordered table-striped">
+        <caption class="caption-top">Listado Estudiantes</caption>
+        <thead id="theadstyle">
+          <tr class="text-center">
+            <th>ID</th>
+            <th>DNI</th>
+            <th>Apellido</th>
+            <th>Nombre</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Nacionalidad</th>
+            <th>Mail</th>
+            <th>Celular</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="dataBody">
+
+        </tbody>
+      </table>
+
+    </div>
+    <!--MODAL-->
+    <div id="addModal"class="modal fade" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h5 class="modal-title" id="exampleModalLabel">Nuevo inscripto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="addStudentForm">
+              <div class="form-group mb-3">
+                <label for="recipient-name" class="col-form-label"required>DNI</label>
+                <input id="dni"type="text" class="form-control">
+              </div>
+              <div class="form-group mb-3">
+                <label for="recipient-name" class="col-form-label"required>Apellido</label>
+                <input id="apellido"type="text" class="form-control">
+              </div>
+              <div class="form-group mb-3">
+                <label for="recipient-name" class="col-form-label" required>Nombre</label>
+                <input id="nombre"type="text" class="form-control">
+              </div>
+              <div class="form-group mb-3">
+                <label for="recipient-name" class="col-form-label" required>Fecha de Nacimiento</label>
+                <input id="fechaNac"type="date" class="form-control">
+              </div>
+              <div class="form-group mb-3">
+                <label for="recipient-name" class="col-form-label" required>Nacionalidad</label>
+                <input id="nacionalidad"type="text" class="form-control">
+              </div>
+              <div class="form-group mb-3">
+                <label for="recipient-name" class="col-form-label" required>Mail</label>
+                <input id="mail"type="email" class="form-control">
+              </div>
+              <div class="form-group mb-3">
+                <label for="recipient-name" class="col-form-label" required>Celular</label>
+                <input id="celular"type="number" class="form-control">
+              </div>
+            
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Editar Estudiante -->
+  <div class="modal fade" id="editStudentModal" tabindex="-1" role="dialog" aria-labelledby="editStudentModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title" id="exampleModalLabel">Editar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="editStudentForm">
+            <input type="hidden" id="editStudentId">
+            <div class="form-group">
+              <label for="editdni">DNI:</label>
+              <input type="text" class="form-control" id="editdni" required>
+            </div>
+            <div class="form-group">
+              <label for="editApellido">Apellido:</label>
+              <input type="text" class="form-control" id="editApellido" required>
+            </div>
+            <div class="form-group">
+              <label for="editNombre">Nombre:</label>
+              <input type="text" class="form-control" id="editNombre" required>
+            </div>
+            <div class="form-group">
+              <label for="editNac">Fecha de Nacimiento:</label>
+              <input type="date" class="form-control" id="editNac" required>
+            </div>
+            <div class="form-group">
+              <label for="editNacionalidad">Nacionalidad:</label>
+              <input type="text" class="form-control" id="editNacionalidad" required>
+            </div>
+            <div class="form-group">
+              <label for="editMail">Mail:</label>
+              <input type="email" class="form-control" id="editMail" required>
+            </div>
+            <div class="form-group">
+              <label for="editCelular">Celular:</label>
+              <input type="tel" class="form-control" id="editCelular" required>
+            </div class="modal-footer">
+              
+              <button type="submit" class="btn btn-primary mt-3">Guardar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Scripts de Bootstrap 5 -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  
+  <script type="module" src="js/estudiante.js"></script>
+
+</body>

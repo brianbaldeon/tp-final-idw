@@ -1,0 +1,17 @@
+[
+    {
+        "id":0,
+        "nombre":"Tecnicatura Universitaria en Desarrollo Web",
+        "duracion":3
+    },
+    {
+        "id":1,
+        "nombre":"Licenciatura en Sistemas",
+        "duracion":5
+    },
+    {
+        "id":2,
+        "nombre":"Contador Publico",
+        "duracion":5
+    }
+]

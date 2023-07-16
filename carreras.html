@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNER - Universidad Nacional de Entre Ríos</title>
+  <link rel="stylesheet" href="css/interfaz.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="img/icouner.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/icouner.ico" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Barra Navegación -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img href="index.html" class="logochico" src="img/header.png" alt="UNER">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carreras.html"style="color:#FFFF">CARRERAS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color:#FFFF"href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              INSCRIPCIONES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            
+              <li><a class="dropdown-item" href="bedelia.html">SIGE-BEDELIA</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="institucional.html"style="color:#FFFF">INSTITUCIONAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  
+  <!--  CARDS CARRERAS -->
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold">NUESTRAS CARRERAS</h2>
+      <div class="row mt-4">
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="img/desarrollo.jpg" class="card-img-top" alt="Carrera 1">
+            <div class="card-body">
+              <h5 class="card-title text-center">Tec. en Desarrollo web</h5>
+              <p class="card-text text-center">Duración 3 años. <br>
+                El Técnico Universitario en Programación Web puede desempeñarse de manera independiente o en relación de dependencia en cualquier tipo de organización.
+
+                Estará orientado especialmente al mercado laboral vinculado con la interrelación entre un usuario final y el diseño y producción de aplicaciones que tiene a la Web como medio de ejecución.
+                
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="img/carreras.jpg" class="card-img-top" alt="Carrera 2">
+            <div class="card-body">
+              <h5 class="card-title text-center">Contador Público</h5>
+              <p class="card-text text-center">Duración 5 años. <br>
+
+                El graduado puede asesorar y controlar organizaciones públicas o privadas en temas contables, financieros y tributarios. El perfil del contador público es el de un profesional universitario que cuenta con las bases teóricas, metodológicas y técnicas para obtener una visión multidisciplinaria de los procesos relacionados con los sistemas de información y de control desde una formación.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="img/adm.jpg" class="card-img-top" alt="Carrera 3">
+            <div class="card-body">
+              <h5 class="card-title text-center">Lic. en Administración</h5>
+              <p class="card-text text-center">Duración 5 años. <br>El perfil del licenciado en ciencias de la administración es el de un profesional universitario que cuenta con las bases teóricas, metodológicas y técnicas para obtener una visión multidisciplinaria del proceso administrativo desde una formación en la que ha definido un sesgo personal en cuanto a su especialización, de conformidad con la flexibilidad que sobre el particular se prevé en el plan de estudios.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--AGREGAR MATERIAS-->
+  
+  <!-- <section class="container ">
+    <div class="row ">
+      <h1 class="text-center"> Agregar materias</h1>
+      <form class="form col-6 mx-auto" id="formularioAgregarMateria">
+        <div class="mb-3">
+          <label class="form-label" for="nombre">Nombre</label>
+          <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Ingresa el nombre de la materia..." required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="cargaSemanal">Carga Semanal</label>
+          <input class="form-control" type="text" name="horarios" id="cargaSemanal" placeholder="Ingresa la Carga horaria semanal..." required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="carrera">Carrera</label>
+          <input class="form-control" type="text" name="carrera" id="carrera" placeholder="Ingresa el nombre de la carrera" required>
+        </div>
+
+        <div class="mb-3">
+          <button type="submit" class="btn btn-success" id="botonAgregarMateria">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </section> -->
+
+  <!-- BUSCAR -->
+
+  <!-- <section class="container">
+      <form class="form row" id="formularioBuscarMaterias">
+        <div class="col-6">
+          <label class="form-label">Buscar Materias</label>
+          <input class="form-control" type="text" id="buscarMaterias" placeholder="Buscar por nombre, etc...">
+        </div>
+      </form>
+
+      <div class="col-6">
+        <button type="submit" id="buscar" class="btn btn-info">Buscar</button>
+        <button class="btn btn-success" type="button" id="botonVerMaterias">Ver materias</button>
+      </div>
+  </section> -->
+
+  <!-- TABLA MATERIAS LISTAR-->
+
+  <!-- <section class="container">
+    <table class="table table-dark table-responsive" id="primerCuatrimestre">
+      <caption class="caption-top">Materias</caption>
+      <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Hs Semanales</th>
+            <th>Carrera</th>
+            <th>Acciones</th>
+          </tr>
+      </thead>
+      <tbody id="bodyMaterias">
+       
+      </tbody>
+    </table>
+  </section> -->
+  
+  <!--footer -->
+
+  <footer class="bg-light text-dark pt-5 pb-4">
+    <div class="container text-center text-md-start">
+      <div class="row text-center text-md-start">
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">Ingresantes</h5>
+          <hr class="mb-4">
+          <p> <a href="" class="text-dark">Inscripción</a>
+          </p>
+          <p> <a href="#" class="text-dark">Orientación Vocacional</a>
+          </p>
+          <p> <a href="#" class="text-dark">Becas Manuel Belgrano</a>
+          </p>
+          <p> <a href="#" class="text-dark">Convenios</a>
+          </p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">Estudiantes</h5>
+          <hr class="mb-4">
+          <p> <a href="#" class="text-dark">Carreras</a>
+          </p>
+          <p> <a href="#" class="text-dark">Facultades</a>
+          </p>
+          <p> <a href="#" class="text-dark">Campus Virtual</a>
+          </p>
+          <p> <a href="#" class="text-dark">Internacionales</a>
+          </p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">GRADUADOS</h5>
+          <hr class="mb-4">
+          <p> <a href="#" class="text-dark">Posgrados</a>
+          </p>
+          <p> <a href="#" class="text-dark">Biblioteca Virtual UNER</a>
+          </p>
+          <p> <a href="#" class="text-dark">Becas y programas</a>
+          </p>
+          <p> <a href="#" class="text-dark">Convenios</a>
+          </p>
+
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">Docentes</h5>
+          <hr class="mb-4">
+          <p> <a href="#" class="text-dark">Recursos Humanos</a>
+          </p>
+          <p> <a href="#" class="text-dark">Concursos</a>
+          </p>
+          <p> <a href="#" class="text-dark">Becas</a>
+          </p>
+          <p> <a href="#" class="text-dark">CONICET</a>
+          </p>
+
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">NoDocentes</h5>
+          <hr class="mb-4">
+          <p> <a href="#" class="text-dark">Recursos Humanos</a>
+          </p>
+          <p> <a href="#" class="text-dark">Programas Académicos</a>
+          </p>
+          <p> <a href="#" class="text-dark">Concursos NoDocentes</a>
+          </p>
+          <p> <a href="#" class="text-dark">Recibo de Sueldos</a>
+          </p>
+
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">FACAD</h5>
+          <hr class="mb-4">
+          <p>
+            <li class="fas fa-location-dot me-3"></li>Monseñor Tavella N°1424, Concordia, Entre Ríos, Argentina
+          </p>
+          <p>
+            <li class="fas fa-envelope me-3"></li>fcad@uner.edu.ar
+          </p>
+          <p>
+            <li class="fas fa-phone me-3"> </li>(+54) (345) 4231400
+          </p>
+
+          <p>
+            <li class="fas fa-print me-3"> </li>(+54) (345) 4231410
+          </p>
+
+
+        </div>
+        <hr class="mb-4">
+        <div class="text-center mb-2">
+          <p>
+            &copy; Copyright Todos los derechos reservados.
+            <a href="index.html">
+              <strong class="text-primary "> UNER </strong>
+            </a>
+          </p>
+        </div>
+        <div class="text-center">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/UNERoficial/" class="text-dark"> <i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/uneroficial" class="text-dark"> <i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/school/uner/" class="text-dark"> <i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.youtube.com/@extensionuner" class="text-dark"> <i class="fab fa-youtube"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/unermedios/" class="text-dark"> <i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script>
+    // Calcula la longitud máxima de las cards
+    function calcularLongitudMaxima() {
+      let cards = document.querySelectorAll('.card-text');
+      let maxLength = 0;
+
+      cards.forEach(function (card) {
+        maxLength = Math.max(maxLength, card.clientHeight);
+      });
+
+      return maxLength;
+    }
+
+    // Establece la misma longitud para todas las cards
+    function igualarLongitud() {
+      let cards = document.querySelectorAll('.card-text');
+      let maxLength = calcularLongitudMaxima();
+
+      cards.forEach(function (card) {
+        card.style.height = maxLength + 'px';
+      });
+    }
+
+    // Ejecuta la función para igualar la longitud después de que se cargue la página
+    window.addEventListener('load', igualarLongitud);
+  </script>
+  <script type="module" src="./js/carreras.js"></script>
+</body>
+</html>

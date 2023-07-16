@@ -1,0 +1,22 @@
+[
+    {
+    "id": 1,
+    "DNI":11111111,
+    "apellido": "Riquelme",
+    "nombre": "Juan Román",
+    "fechaNac": "24/06/1978",
+    "nacionalidad": "Argentino",
+    "mail": "ultimo10@gmail.com",
+    "celular": "1510101010",
+    "materias": {
+          "id": "1",
+          "nombre": "Programación 1",
+          "horas": "35",
+          "carrera": {
+            "id":"1",
+            "nombre": "Tecnicatura en desarrollo web"
+          }
+        }
+    
+   }
+]

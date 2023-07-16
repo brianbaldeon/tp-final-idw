@@ -1,0 +1,50 @@
+[
+    {
+        "id":0,
+        "nombre": "Programacion 1",
+        "hsSemanales": 7,
+        "carrera": 0
+    },
+    {
+        "id":1,
+        "nombre": "Introduccion a la informatica",
+        "hsSemanales": 7,
+        "carrera": 0
+    },
+    {
+        "id":2,
+        "nombre": "Programacion 2",
+        "hsSemanales": 7,
+        "carrera": 0
+    },
+    {
+        "id":3,
+        "nombre": "Diseño Grafico",
+        "hsSemanales": 7,
+        "carrera": 0
+    },
+    {
+        "id":4,
+        "nombre": "Arquitectura",
+        "hsSemanales": 7,
+        "carrera": 0
+    },
+    {
+        "id":5,
+        "nombre": "Introduccion al Desarrollo Web",
+        "hsSemanales": 7,
+        "carrera": 0
+    },
+    {
+        "id":6,
+        "nombre": "Bases de Datos",
+        "hsSemanales": 7,
+        "carrera": 0
+    },
+    {
+        "id":7,
+        "nombre": "Sistemas Operativos",
+        "hsSemanales": 7,
+        "carrera": 0
+    }
+]
